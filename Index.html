@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Angela Quiz</title>
+</head>
+
+<body>
+	<!-- Wrap header, questions,and buttons to one container -->
+	<div class="container">
+	<!-- titling the page -->
+	<h1 class="title">How Well Do You Know Angela Chack?</h1>
+
+		<div class="form-group">
+			<h4 id="question0"></h2>
+			  <!-- <label for="lastName">What's my last name?</label> -->
+			  <input id="question0" type="text" class="form-control">
+		</div>
+		<div class="form-group">
+			<h4 id="question1"></h2>
+			  <!-- <label for="born">Where was I born?</label> -->
+			  <input id="question1" type="text" class="form-control">
+		</div>
+		<div class="checkbox">
+		<h4>Which of these animals do I have as a pet(s)</h4>
+			<!-- <label for="pets">Which of these animals do I have as a pet(s)?</label> -->
+			<!-- <br> -->
+			  <label><input type="checkbox" value="turtle">Turtle</label>
+			  <label><input type="checkbox" value="dog">Dog</label>
+			  <label><input type="checkbox" value="rabbit">Rabbit</label>
+			  <label><input type="checkbox" value="cat">Cat</label>
+			</div>
+		<div class="form-group">
+			<h4>Where was I born?</h4>
+			  <!-- <label for="born">Where was I born?</label> -->
+			  <input type="text" class="form-control" id="born">
+		</div>
+		<div class="checkbox">
+			<h4>Where have I been?</h4>
+			<!-- <label for="country">Where have I been?</label> -->
+			  <label><input type="checkbox" value="nicaragua">Nicaragua</label>
+			  <label><input type="checkbox" value="thailand">Thailand</label>
+			  <label><input type="checkbox" value="france">France</label>
+			  <label><input type="checkbox" value="germany">Germany</label>
+		</div>
+		<div class="radio">
+			<h4>Am I funny?</h4>
+			<!-- <label for="funny">Am I funny?</label> -->
+		  	<label><input type="radio" name="duh">Duh</label>
+		 	<label><input type="radio" name="guess">I guess</label>
+		</div>
+		<div class="form-group">
+			<h4>Who is my Dream Celebrity crush?</h4>
+			  <!-- <label for="crush">Who is my Dream Celebrity crush?</label> -->
+			  <input type="text" class="form-control" id="crush">
+		</div>
+		<button type="button" onclick="testResults()" class="btn btn-primary btn-md">Don't Disappoint Me!</button>
+	</div>
+
+	<!-- Right or wrong area -->
+	<div class="col-sm-2 col-sm-offset-1">
+		<h2 class="correct">Correct <span id="correct"></span></h2>
+		<h2 class="incorrect">Incorrect: <span id="incorrect"></span></h2>
+
+
+</body>
+
+
+<!-- pulling javascript-->
+<script src="js/main.js"></script>
+
+</html>
